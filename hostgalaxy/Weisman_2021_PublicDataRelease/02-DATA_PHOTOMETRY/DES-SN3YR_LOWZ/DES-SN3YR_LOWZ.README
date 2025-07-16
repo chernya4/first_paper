@@ -1,0 +1,15 @@
+# Combined data files with command:
+#    ./combine_dataVersions.py COMBINE.INPUT 
+# Host      = midway-login1
+# User      = rkessler
+# Directory = /project/rkessler/SN/INTERNAL/DES/LOWZ
+# Time      = Tue May  1 17:31:53 2018
+
+  65 data files from PS1s_CFA3_4SHOOTER2_DS17     UBVRI -> abcde 
+ 120 data files from PS1s_CFA3_KEPLERCAM_DS17     UBVri -> fghij 
+  75 data files from PS1s_CFA4_p1_DS17            UBVri -> klmno 
+  19 data files from PS1s_CFA4_p2_DS17            BVri -> pqrs 
+  85 data files from PS1s_CSPDR2_V_DS17           uBomngri -> tuvwxyzA 
+
+
+merged_*.dat files are generated from a combination of photometry from multiple cameras.

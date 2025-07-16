@@ -1,0 +1,100 @@
+Here we provide bias corrected light curve fit results, distances,
+and bias corrections determined with each model of intrinsic scatter
+(G10 or C11). For each of the G10 and C11 .FITRES files, the lightcurve
+fit parameters remain the same, however the bias corrections are
+computed from different simulations of intrinsic scatter provided in
+03-SIM_BIASCOR/.
+
+
+There is a subtle caveat that we found while preparing the combined probe 
+paper (https://arxiv.org/abs/1811.02375) that includes DES SNIa (without 
+low-z sample), BAO, weak lending and galaxy clustering. The joint cosmology 
+fit has a somewhat large chi2 (chi2=576 with Ndof=498), in part due to the 
+DES SNIa in which the lowest redshift bin (0.067-0.081) contains a single 
+event that is a nearly 3 Sigma Hubble residual outlier. This large chi2
+goes away when the external low-z sample is included, or when doing an 
+un-binned fit with 207 DES SNIa.
+
+-------------  *.M0DIF --------------
+is the redshift-binned Hubble Diagram
+
+Column definitions in *.M0DIF ASCII table:
+
+zMIN   		   # min of redshift bin
+zMAX   		   # max of redshift bin
+z      		   # avg z in bin (following Eq. 8 of Brout et al arXiv:1811.02377)
+MUDIF  		   # fitted binned mu-offset w.r.t ref cosmological model (following Eq. 14 of Brout et al arXiv:1811.02377) 
+MUDIFERR	   # 1 sigma uncertainty on MUDIF
+MUREF		   # reference model distance (w_DE:-1, Omega_M:0.3, Omega_k=0)
+NFIT		   # number of SNe in z bin
+
+   For cosmological fits, use
+      MU(z)       = MUREF + MUDIF
+      sigma_mu(z) = MUDIFERR
+      
+------------   *.FITRES -------------------
+is the bias corrected light curve fit results (un-binned)
+
+Column definitions in *.FITRES ASCII table:
+
+CID              # candidate ID
+IDSURVEY         # integer SURVEY ID (DES:10, CFA3:63-64, CFA4:65-66-67, CSP:68)
+TYPE             # SN type (always 1 for DES-SN3YR sims)
+FIELD            # NULL for low-z, set to SN field name for DES
+CUTFLAG_SNANA    # always=1 since all events here pass cuts
+zHEL             # heliocentric redshift
+zHELERR          # error on above
+zCMB             # CMB redshift
+zCMBERR          # error on above
+zHD              # Hubble diagram redshift; zCMB with VPEC correction
+zHDERR           # error on above: zCMBERR + VPECERR
+VPEC             # pec velocity correction applied to ZHD
+VPECERR          # error on above
+HOST_LOGMASS     # log10(Mstellar/Msun)
+HOST_LOGMASS_ERR # error on above
+SNRMAX1          # max SNR among all observations
+SNRMAX2          # max SNR after removing band with SNRMAX1
+SNRMAX3          # max SNR after removing bands with SNRMAX1 and SNRMAX2
+PKMJD            # best fit peak-MJD (rest-frame B band) from SALT2 light curve fit
+PKMJDERR         # error on above
+x1               # best fit SALT2 stretch parameter
+x1ERR            # error on above
+c                # best fit SALT2 color parameter
+cERR             # error on above
+mB               # -2.5log10(x0), where x0 is defined below
+mBERR            # error on mB
+x0               # best fit SALT2 amplitude
+x0ERR            # error on above
+COV_x1_c         # fitted covariance bertween x1 and c
+COV_x1_x0        # fitted covariance bertween x1 and x0
+COV_c_x0         # fitted covariance bertween c and x0
+NDOF             # number of degrees of freedom in light curve fit
+FITCHI2          # total CHI2 from light curve fit
+FITPROB          # fit probability [0-1] for CHI2 and NDOF
+RA		 # right ascension
+DECL		 # declination
+TGAPMAX		 # Rest frame duration of gap in light curve coverage near peak 
+TrestMIN	 # time of earliest observation used in fit
+TrestMAX	 # time of latest observation usedin fit
+MWEBV		 # Milky Way Galactic E(B-V) value used
+m0obs_i		 # peak i-band mag computed from best fit SALT2 model
+m0obs_r		 # idem for r-band,
+em0obs_i         # error on above
+em0obs_r	 # error on above
+
+ [below are additions from BBC fit]
+MU		 # from Tripp Eq using BBC fitted alpha,beta,gamma
+MUMODEL		 # reference model distance modulus (w_DE:-1, Omega_M:0.3, Omega_k=0)
+MUERR		 # 1 sigma uncertainty on MU (measurement error and sigma_int) 
+MUERR_RAW	 # 1 sigma measurement error on MU (no sigma_int term)
+MURES		 # MU-(MUMODEL+M0DIF)
+MUPULL		 # MURES/MUERR-1 
+M0DIF		 # z-binned MU-offset
+ERRCODE		 # no error => always zero
+biasCor_mu	 # bias correction already applied to MU
+biasCorErr_mu	 # 1 sigma uncertainty on biasCor_mu (not used)
+biasCor_mB	 # bias correction on mB
+biasCor_x1	 # bias correction on x1
+biasCor_c	 # bias correction on c
+biasScale_muCOV	 # R_sigma in Eq 13 of arXiv:1610.04677
+IDSAMPLE	 # [0] for LOWz and [1] for DES

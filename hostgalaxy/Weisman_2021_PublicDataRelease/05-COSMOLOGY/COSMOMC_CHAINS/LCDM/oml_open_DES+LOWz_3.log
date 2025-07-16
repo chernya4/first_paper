@@ -1,0 +1,210 @@
+ metropolis rat:   1.000000      in           50 , best:    12.40653    
+ local acceptance ratio:   1.000000    
+ metropolis rat:  0.9900990      in          101 , best:    12.40653    
+ local acceptance ratio:  0.9803922    
+ metropolis rat:  0.9868421      in          152 , best:    12.40653    
+ local acceptance ratio:  0.9803922    
+ Current convergence R-1 =    18.19160      chain steps =         162
+ slow changes           0  power changes           0
+ metropolis rat:  0.9708738      in          206 , best:    12.18465    
+ local acceptance ratio:  0.9259259    
+ Current convergence R-1 =    1.344979      chain steps =         248
+ slow changes           0  power changes           0
+ metropolis rat:  0.9293680      in          269 , best:    12.16971    
+ local acceptance ratio:  0.7936508    
+ metropolis rat:  0.8403361      in          357 , best:    12.16971    
+ local acceptance ratio:  0.5681818    
+ metropolis rat:  0.7829978      in          447 , best:    12.16971    
+ local acceptance ratio:  0.5555556    
+ Current convergence R-1 =    2.112717      chain steps =         460
+ slow changes           0  power changes           0
+ metropolis rat:  0.7272727      in          550 , best:    12.16971    
+ local acceptance ratio:  0.4854369    
+ Current convergence R-1 =   0.4690735      chain steps =         575
+ slow changes           0  power changes           0
+ metropolis rat:  0.6736527      in          668 , best:    12.16971    
+ local acceptance ratio:  0.4237288    
+ Current convergence R-1 =   0.2300937      chain steps =         690
+ slow changes           0  power changes           0
+ metropolis rat:  0.6297229      in          794 , best:    12.16971    
+ local acceptance ratio:  0.3968254    
+ Current convergence R-1 =   0.1280341      chain steps =         798
+ slow changes           0  power changes           0
+ metropolis rat:  0.6124722      in          898 , best:    12.16971    
+ local acceptance ratio:  0.4807692    
+ Current convergence R-1 =   8.1357501E-02  chain steps =         946
+ slow changes           0  power changes           0
+ metropolis rat:  0.5905512      in         1016 , best:    12.16971    
+ local acceptance ratio:  0.4237288    
+ Current convergence R-1 =   5.0973024E-02  chain steps =        1110
+ slow changes           0  power changes           0
+ metropolis rat:  0.5550811      in         1171 , best:    12.16971    
+ local acceptance ratio:  0.3225806    
+ Current convergence R-1 =   4.2227525E-02  chain steps =        1179
+ slow changes           0  power changes           0
+ Current convergence R-1 =   3.0545214E-02  chain steps =        1275
+ slow changes           0  power changes           0
+ metropolis rat:  0.5426357      in         1290 , best:    12.16708    
+ local acceptance ratio:  0.4201681    
+ Current convergence R-1 =   1.7647373E-02  chain steps =        1386
+ slow changes           0  power changes           0
+ metropolis rat:  0.5349501      in         1402 , best:    12.16640    
+ local acceptance ratio:  0.4464286    
+ Current convergence R-1 =   2.5531383E-02  chain steps =        1468
+ slow changes           0  power changes           0
+ metropolis rat:  0.5344021      in         1497 , best:    12.16640    
+ local acceptance ratio:  0.5263158    
+ Current convergence R-1 =   2.7434295E-02  chain steps =        1544
+ slow changes           0  power changes           0
+ metropolis rat:  0.5335844      in         1593 , best:    12.16639    
+ local acceptance ratio:  0.5208333    
+ Current convergence R-1 =   2.9602654E-02  chain steps =        1671
+ slow changes           0  power changes           0
+ metropolis rat:  0.5306604      in         1696 , best:    12.16639    
+ local acceptance ratio:  0.4854369    
+ Current convergence R-1 =   2.1766301E-02  chain steps =        1809
+ slow changes           0  power changes           0
+ metropolis rat:  0.5219780      in         1820 , best:    12.16639    
+ local acceptance ratio:  0.4032258    
+ Current convergence R-1 =   1.6157625E-02  chain steps =        1924
+ slow changes           0  power changes           0
+ metropolis rat:  0.5130836      in         1949 , best:    12.16639    
+ local acceptance ratio:  0.3875969    
+ Current convergence R-1 =   8.2481718E-03  chain steps =        2009
+ slow changes           0  power changes           0
+ metropolis rat:  0.5050505      in         2079 , best:    12.16639    
+ local acceptance ratio:  0.3846154    
+ Current convergence R-1 =   1.0067914E-02  chain steps =        2114
+ slow changes           0  power changes           0
+ metropolis rat:  0.5092593      in         2160 , best:    12.16639    
+ local acceptance ratio:  0.6172839    
+ Current convergence R-1 =   9.9006696E-03  chain steps =        2220
+ slow changes           0  power changes           0
+ metropolis rat:  0.5028421      in         2287 , best:    12.16639    
+ local acceptance ratio:  0.3937008    
+ Current convergence R-1 =   2.5256809E-02  chain steps =        2358
+ slow changes           0  power changes           0
+ metropolis rat:  0.4946414      in         2426 , best:    12.16639    
+ local acceptance ratio:  0.3597122    
+ Current convergence R-1 =   2.3178061E-02  chain steps =        2432
+ slow changes           0  power changes           0
+ metropolis rat:  0.4858142      in         2573 , best:    12.16639    
+ local acceptance ratio:  0.3401361    
+ Current convergence R-1 =   3.0819828E-02  chain steps =        2600
+ slow changes           0  power changes           0
+ metropolis rat:  0.4839911      in         2686 , best:    12.16639    
+ local acceptance ratio:  0.4424779    
+ Current convergence R-1 =   3.7618991E-02  chain steps =        2751
+ slow changes           0  power changes           0
+ metropolis rat:  0.4824875      in         2798 , best:    12.16639    
+ local acceptance ratio:  0.4464286    
+ Current convergence R-1 =   3.5299029E-02  chain steps =        2865
+ slow changes           0  power changes           0
+ metropolis rat:  0.4809344      in         2911 , best:    12.16639    
+ local acceptance ratio:  0.4424779    
+ metropolis rat:  0.4799735      in         3021 , best:    12.16639    
+ local acceptance ratio:  0.4545455    
+ Current convergence R-1 =   2.8090026E-02  chain steps =        3033
+ slow changes           0  power changes           0
+ Current convergence R-1 =   2.6335930E-02  chain steps =        3107
+ slow changes           0  power changes           0
+ metropolis rat:  0.4769475      in         3145 , best:    12.16639    
+ local acceptance ratio:  0.4032258    
+ Current convergence R-1 =   3.1838022E-02  chain steps =        3208
+ slow changes           0  power changes           0
+ metropolis rat:  0.4724169      in         3281 , best:    12.16639    
+ local acceptance ratio:  0.3676471    
+ Current convergence R-1 =   2.1358024E-02  chain steps =        3333
+ slow changes           0  power changes           0
+ metropolis rat:  0.4685212      in         3415 , best:    12.16639    
+ local acceptance ratio:  0.3731343    
+ Current convergence R-1 =   1.6546909E-02  chain steps =        3486
+ slow changes           0  power changes           0
+ metropolis rat:  0.4686169      in         3521 , best:    12.16639    
+ local acceptance ratio:  0.4716981    
+ Current convergence R-1 =   1.4763653E-02  chain steps =        3570
+ slow changes           0  power changes           0
+ metropolis rat:  0.4666484      in         3643 , best:    12.16639    
+ local acceptance ratio:  0.4098361    
+ Current convergence R-1 =   1.1296175E-02  chain steps =        3700
+ slow changes           0  power changes           0
+ metropolis rat:  0.4643141      in         3769 , best:    12.16639    
+ local acceptance ratio:  0.3968254    
+ Current convergence R-1 =   1.6275141E-02  chain steps =        3800
+ slow changes           0  power changes           0
+ metropolis rat:  0.4642765      in         3877 , best:    12.16639    
+ local acceptance ratio:  0.4629630    
+ Current convergence R-1 =   1.2202232E-02  chain steps =        3922
+ slow changes           0  power changes           0
+ metropolis rat:  0.4627314      in         3998 , best:    12.16639    
+ local acceptance ratio:  0.4132231    
+ Current convergence R-1 =   1.2218164E-02  chain steps =        4000
+ slow changes           0  power changes           0
+ metropolis rat:  0.4598258      in         4132 , best:    12.16639    
+ local acceptance ratio:  0.3731343    
+ Current convergence R-1 =   1.6409505E-02  chain steps =        4132
+ slow changes           0  power changes           0
+ Current convergence R-1 =   1.3758217E-02  chain steps =        4207
+ slow changes           0  power changes           0
+ metropolis rat:  0.4577465      in         4260 , best:    12.16639    
+ local acceptance ratio:  0.3906250    
+ Current convergence R-1 =   1.0820376E-02  chain steps =        4354
+ slow changes           0  power changes           0
+ metropolis rat:  0.4561003      in         4385 , best:    12.16639    
+ local acceptance ratio:  0.4000000    
+ Current convergence R-1 =   7.8024990E-03  chain steps =        4488
+ slow changes           0  power changes           0
+ metropolis rat:  0.4547471      in         4508 , best:    12.16637    
+ local acceptance ratio:  0.4065041    
+ Current convergence R-1 =   5.6066574E-03  chain steps =        4600
+ slow changes           0  power changes           0
+ metropolis rat:  0.4534658      in         4631 , best:    12.16613    
+ local acceptance ratio:  0.4065041    
+ Current convergence R-1 =   6.1715334E-03  chain steps =        4678
+ slow changes           0  power changes           0
+ metropolis rat:  0.4513962      in         4763 , best:    12.16613    
+ local acceptance ratio:  0.3787879    
+ Current convergence R-1 =   5.7499097E-03  chain steps =        4799
+ slow changes           0  power changes           0
+ metropolis rat:  0.4490712      in         4899 , best:    12.16613    
+ local acceptance ratio:  0.3676471    
+ Current convergence R-1 =   1.0241166E-02  chain steps =        4902
+ slow changes           0  power changes           0
+ metropolis rat:  0.4487435      in         5014 , best:    12.16613    
+ local acceptance ratio:  0.4347826    
+ Current convergence R-1 =   1.2755729E-02  chain steps =        5019
+ slow changes           0  power changes           0
+ Current convergence R-1 =   1.0160494E-02  chain steps =        5100
+ slow changes           0  power changes           0
+ metropolis rat:  0.4480810      in         5133 , best:    12.16613    
+ local acceptance ratio:  0.4201681    
+ Current convergence R-1 =   7.2087436E-03  chain steps =        5216
+ slow changes           0  power changes           0
+ metropolis rat:  0.4479603      in         5246 , best:    12.16613    
+ local acceptance ratio:  0.4424779    
+ Current convergence R-1 =   7.5838058E-03  chain steps =        5307
+ slow changes           0  power changes           0
+ metropolis rat:  0.4458480      in         5383 , best:    12.16613    
+ local acceptance ratio:  0.3649635    
+ Current convergence R-1 =   5.9313844E-03  chain steps =        5402
+ slow changes           0  power changes           0
+ metropolis rat:  0.4461847      in         5491 , best:    12.16613    
+ local acceptance ratio:  0.4629630    
+ Current convergence R-1 =   5.1638070E-03  chain steps =        5527
+ slow changes           0  power changes           0
+ Current convergence R-1 =   4.8884270E-03  chain steps =        5600
+ slow changes           0  power changes           0
+ metropolis rat:  0.4458712      in         5607 , best:    12.16613    
+ local acceptance ratio:  0.4310345    
+ Current convergence R-1 =   3.8448309E-03  chain steps =        5667
+ slow changes           0  power changes           0
+ metropolis rat:  0.4459601      in         5718 , best:    12.16613    
+ local acceptance ratio:  0.4504505    
+ Current convergence R-1 =   2.7708120E-03  chain steps =        5808
+ slow changes           0  power changes           0
+ metropolis rat:  0.4432322      in         5866 , best:    12.16613    
+ local acceptance ratio:  0.3378378    
+ metropolis rat:  0.4428476      in         5984 , best:    12.16613    
+ local acceptance ratio:  0.4237288    
+ Current convergence R-1 =   2.3180069E-03  chain steps =        6000
+ slow changes           0  power changes           0

@@ -1,0 +1,48 @@
+SURVEY:  DES3YR_LOWZ_COMBINED(CFA3K)
+SNID:    2006cq      
+IAUC:    2006cq      
+RA:       201.10433  deg
+DECL:      30.95620  deg
+MWEBV: 0.016 (SFD98)
+REDSHIFT_HELIO: 0.0484109017733 +- 0.000 (Hel)
+REDSHIFT_CMB: 0.0492143444717 +- 0.000 (CMB)
+REDSHIFT_FINAL: 0.0492143444717 +- 0.000 (CMB)
+HOSTGAL_LOGMASS: 11.1780 +- 0.401
+PRIVATE(COSMO): 1
+SEARCH_PEAKMJD: 53890.043
+FILTERS:  abcdefghijklmnopqrstuvwxyzA  # UBVri -> fghij       
+#
+# Variables copied from
+#   /project/rkessler/SN/INTERNAL/DES/simlibs/VPEC_LOWZ.TXT
+VPEC:  81.3431243903
+VPEC_ERR:  250.0
+#
+ 
+# ========================================
+# FLUXCAL = 10^[ -0.4*mag + 11 ] 
+#
+ 
+NOBS:   20
+NVAR: 7 
+VARLIST:  MJD  FLT FIELD   FLUXCAL   FLUXCALERR  MAG    MAGERR
+OBS:  53886.328  j  NULL   5883.       129.4     18.076  0.022
+OBS:  53886.328  i  NULL   8333.       158.3     17.698  0.019
+OBS:  53886.332  h  NULL   8606.       146.3     17.663  0.017
+OBS:  53886.336  g  NULL   8219.       131.5     17.713  0.016
+OBS:  53888.207  i  NULL   8929.       151.8     17.623  0.017
+OBS:  53888.211  j  NULL   5485.       181.0     18.152  0.033
+OBS:  53888.211  h  NULL   9256.       203.6     17.584  0.022
+OBS:  53888.215  g  NULL   9145.       146.3     17.597  0.016
+OBS:  53890.320  j  NULL   5356.       171.4     18.178  0.032
+OBS:  53890.320  i  NULL   9384.       159.5     17.569  0.017
+OBS:  53890.324  h  NULL   9341.       186.8     17.574  0.020
+OBS:  53890.328  g  NULL   8766.       149.0     17.643  0.017
+OBS:  53891.246  i  NULL   9506.       199.6     17.555  0.021
+OBS:  53891.250  j  NULL   5455.       163.6     18.158  0.030
+OBS:  53891.254  h  NULL   9137.       201.0     17.598  0.022
+OBS:  53894.328  j  NULL   5068.       283.8     18.238  0.056
+OBS:  53894.332  i  NULL   8806.       290.6     17.638  0.033
+OBS:  53928.246  j  NULL   3110.       410.6     18.768  0.132
+OBS:  53928.250  i  NULL   2249.       283.4     19.120  0.126
+OBS:  53928.254  h  NULL   1952.       394.2     19.274  0.202
+END: 

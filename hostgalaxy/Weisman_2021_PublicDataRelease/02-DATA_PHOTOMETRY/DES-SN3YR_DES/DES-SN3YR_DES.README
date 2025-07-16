@@ -1,0 +1,14 @@
+Created with command 
+  brout_convertSMP2snana.py SPECv3_withcuts SPECv3_withcuts
+HOST: midway-login1
+TIME: Mon Jul  2 08:48:31 2018
+
+
+NOTES:
+    - Photometry error fudges described in Brout et al. 2018-SMP
+      have already been included. The fudge maps are also provided
+      in ../DES_corrections/DES3YR_FAKE_ERRORFUDGES.DAT for reference
+
+    - Chromatic corrections described in Lasker et al. 2018 have
+      already been included. The corrections applied are also
+      provided in ../DES_corrections/DES3YR_DES_MAGCOR.DAT for ref.

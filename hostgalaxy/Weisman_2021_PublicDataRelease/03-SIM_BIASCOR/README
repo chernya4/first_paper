@@ -1,0 +1,69 @@
+Biascor files include light curve fit parameters and
+sim-truth values for large (~1million) simulations of
+DES+LOWz SNe.
+
+We provide simulations using 2 methods of modeling
+intrinsic scatter of SNeIa luminosities, based on
+G10: Guy et al. 2010  and C11: Conley et al. 2011.
+
+Sims are generated on a 2x2 grid of
+alpha and beta values:
+
+The alpha grid is 0.10 to 0.24 for both G10 and C11.
+The beta grid is 2.7 to 3.5 for G10;
+the beta grid is 3.3 to 4.3 for C11.
+
+We provid one large simulation for each
+intrinsic scatter model, G10 and C11.
+
+Column definitions in ASCII table:
+
+CID              # candidate ID 
+IDSURVEY         # integer SURVEY ID (DES:10, CFA3:63-64, CFA4:65-66-67, CSP:68)
+TYPE             # SN type (always 1 for DES-SN3YR sims)
+FIELD            # NULL for low-z, set to SN field name for DES
+CUTFLAG_SNANA    # always=1 since all events here pass cuts
+zHEL             # heliocentric redshift
+zHELERR          # error on above
+zCMB             # CMB redshift
+zCMBERR          # error on above
+zHD              # Hubble diagram redshift; zCMB with VPEC correction
+zHDERR           # error on above: zCMBERR + VPECERR
+VPEC             # pec velocity correction applied to ZHD
+VPECERR          # error on above
+HOST_LOGMASS     # log10(Mstellar/Msun)
+HOST_LOGMASS_ERR # error on above
+SNRMAX1          # max SNR among all observations
+SNRMAX2          # max SNR after removing band with SNRMAX1
+SNRMAX3          # max SNR after removing bands with SNRMAX1 and SNRMAX2
+PKMJD            # best fit peak-MJD (rest-frame B band) from SALT2 light curve fit
+PKMJDERR         # error on above
+x1               # best fit SALT2 stretch parameter
+x1ERR            # error on above
+c                # best fit SALT2 color parameter
+cERR             # error on above
+mB               # -2.5log10(x0), where x0 is defined below
+mBERR            # error on mB
+x0               # best fit SALT2 amplitude
+x0ERR            # error on above
+COV_x1_c         # fitted covariance bertween x1 and c
+COV_x1_x0        # fitted covariance bertween x1 and x0
+COV_c_x0         # fitted covariance bertween c and x0
+NDOF             # number of degrees of freedom in light curve fit
+FITCHI2          # total CHI2 from light curve fit
+FITPROB          # fit probabilit [0-1] for CHI2 and NDOF
+SIM_TYPE_INDEX       # always 1 for DES-SN3YR (no CC contamination)
+SIM_TEMPLATE_INDEX   # always 0 for DES-SN3YR (no CC contamination)
+SIM_LIBID            # observation library entry ID
+SIM_NGEN_LIBID       # not used
+SIM_ZCMB             # true CMB redshift
+SIM_VPEC             # true peculiar velocity
+SIM_DLMAG            # true distance modulus
+SIM_PKMJD            # true MJD of peak-mag (rest-frame B band)
+SIM_x1               # true SALT2 x1 value
+SIM_c                # true SALT2 c value
+SIM_alpha            # true SALT2 alpha value
+SIM_beta             # true SALT2 beta value
+SIM_x0               # true SALT2 x0 value
+SIM_mB               # true SALT2 mB value
+SIM_AV               # true host-galaxy extinction (always -9 => not used)

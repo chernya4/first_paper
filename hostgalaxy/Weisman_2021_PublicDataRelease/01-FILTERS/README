@@ -1,0 +1,7 @@
+
+Also available in public SNANA repository:
+  $SNDATA_ROOT/filters/DES/DES-SN3YR_DECam
+
+and the corresponding kcor/calibration files for SNANA
+are under
+   $SNDATA_ROOT/kcor/DES/DES-SN3YR

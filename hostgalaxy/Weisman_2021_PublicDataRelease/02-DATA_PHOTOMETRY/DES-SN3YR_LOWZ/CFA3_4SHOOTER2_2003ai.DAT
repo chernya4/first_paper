@@ -1,0 +1,54 @@
+SURVEY:  DES3YR_LOWZ_COMBINED(CFA3S)
+SNID:    2003ai      
+IAUC:    2003ai      
+RA:       195.24458  deg
+DECL:      39.85685  deg
+MWEBV: 0.014 (SFD98)
+REDSHIFT_HELIO: 0.036200000 +- 0.000 (Hel)
+REDSHIFT_CMB: 0.036940687 +- 0.000 (CMB)
+REDSHIFT_FINAL: 0.036940687 +- 0.000 (CMB)
+HOSTGAL_LOGMASS: 8.13200 +- 2.538
+PRIVATE(COSMO): 1
+SEARCH_PEAKMJD: 52696.184
+FILTERS:  abcdefghijklmnopqrstuvwxyzA  # UBVRI -> abcde       
+#
+# Variables copied from
+#   /project/rkessler/SN/INTERNAL/DES/simlibs/VPEC_LOWZ.TXT
+VPEC:  193.940861724
+VPEC_ERR:  250.0
+#
+ 
+# ========================================
+# FLUXCAL = 10^[ -0.4*mag + 11 ] 
+#
+ 
+NOBS:   26
+NVAR: 7 
+VARLIST:  MJD  FLT FIELD   FLUXCAL   FLUXCALERR  MAG    MAGERR
+OBS:  52705.488  c  NULL  0.1088E+05   337.4     17.408  0.031
+OBS:  52705.492  d  NULL  0.1147E+05   424.4     17.351  0.037
+OBS:  52705.496  e  NULL   8333.       350.0     17.698  0.042
+OBS:  52729.430  b  NULL   1010.       61.62     19.989  0.061
+OBS:  52729.430  c  NULL   3230.       77.52     18.727  0.024
+OBS:  52729.434  d  NULL   5119.       148.5     18.227  0.029
+OBS:  52729.434  e  NULL   6048.       308.4     18.046  0.051
+OBS:  52745.398  d  NULL   2711.       184.4     18.917  0.068
+OBS:  52745.402  e  NULL   3937.       433.1     18.512  0.110
+OBS:  52750.293  b  NULL   757.2       49.22     20.302  0.065
+OBS:  52750.301  d  NULL   2623.       154.8     18.953  0.059
+OBS:  52750.301  e  NULL   3171.       272.7     18.747  0.086
+OBS:  52752.371  b  NULL   713.2       69.89     20.367  0.098
+OBS:  52752.375  c  NULL   1626.       87.82     19.472  0.054
+OBS:  52752.379  d  NULL   2563.       105.1     18.978  0.041
+OBS:  52752.379  e  NULL   2924.       193.0     18.835  0.066
+OBS:  52758.352  b  NULL   704.0       57.03     20.381  0.081
+OBS:  52758.355  c  NULL   1460.       86.15     19.589  0.059
+OBS:  52758.359  d  NULL   2019.       86.83     19.237  0.043
+OBS:  52758.359  e  NULL   2459.       277.9     19.023  0.113
+OBS:  52761.395  b  NULL   715.2       55.78     20.364  0.078
+OBS:  52761.398  c  NULL   1459.       81.69     19.590  0.056
+OBS:  52761.402  d  NULL   1930.       111.9     19.286  0.058
+OBS:  52761.402  e  NULL   1984.       154.8     19.256  0.078
+OBS:  52762.387  c  NULL   1443.       77.91     19.602  0.054
+OBS:  52762.391  d  NULL   1988.       115.3     19.254  0.058
+END: 

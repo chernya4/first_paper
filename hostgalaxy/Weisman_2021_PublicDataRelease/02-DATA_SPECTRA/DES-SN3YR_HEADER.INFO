@@ -1,0 +1,52 @@
+DES-SN3YR SPECTROSCOPY DATA RELEASE: FILE STRUCTURE
+-----------------------------------
+
+Reduced 1D spectra for each observation are presented in CSV format, with 3 columns (observer frame wavelength, flux, flux error) and contextual information listed in a header: 
+
+TRANSIENT_NAME:     As given in DES-SN3YR.LIST and described in DES-SN3YR.README
+SNID:               As given in DES-SN3YR.LIST and described in DES-SN3YR.README
+OBS_DATE:           In UTC to the nearest day
+MJD:                Direct conversion of OBS-DATE
+PHASE(_EXP):        In the rest-frame. See "PHASE ESTIMATION" for details
+MJD_MAX/_EXP:       Determined from LC data. See "PHASE ESTIMATION" for details
+TYPE:               Integer value used in the SNANA framework. See "SPECTROSCOPIC TYPING" for details
+SPEC_EVAL:          String value for TYPE. 
+REDSHIFT:           As determined from the listed spectrum.
+REDSHIFT_ERR:       Dependent on REDSHIFT_SOURCE. See "REDSHIFT UNCERTAINTIES" for details.
+REDSHIFT_SOURCE:    Information on whether the redshift has been obtained from narrow galaxy emission / absorption features or matches to literature SN templates
+TELESCOPE:          Facility used. Details on observing team, targeting policy and reduction strategy can be found in D'Andrea, C, et. al., 2018 (arXiv:1811.09565).
+INSTRUMENT:         Spectrograph utilised. Instrumental setup (e.g. grating choices) can be found in D'Andrea, C, et. al., 2018 (arXiv:1811.09565).
+
+SPECTRAL FORMAT:
+ - Normalised spectra are presented (in the observer frame) in 3 columns (wavelength, flux, flux_err). 
+ - For spectra where no error estimate is available the FLUX_ERR column is replaced with '---'
+
+-----------------------------------
+
+SPECTROSCOPIC TYPING:
+ - The classification scheme used in this data release is described in D'Andrea, C, et. al., 2018 (arXiv:1811.09565).
+ - Each spectrum is classified based on matches to literature spectra using either SNID (Blondin & Tonry, ApJ, 666, 1024B, 2007) or superfit (Howell et. al., ApJ, 634, 1190, 2005). In both cases, template libraries have been expanded to include spectra from: Quimby et. al., ApJ, 855, 2Q, 2018; Gutierrez et. al., ApJ, 850, 89G, 2017; Modjaz et. al., ApJ, 832, 108M, 2016; Williamson et. al., ApJL, 880, 22W; Silverman et. al., MNRAS, 425, 1789S, 2012. 
+ - Spectroscopic typings, given in the SPEC_EVAL column are converted to integer values (TYPE) following the SNANA description:
+	- SNIa -> 1; SNIb -> 32; SNIc -> 33; SNIb/c -> 39; SNII -> 29; SNIIn -> 22; SNIIb -> 23; SLSN-I -> 41; SLSN-II -> 42; TDE -> 81
+	- 'TYPE = XX_TYPE + 100' for objects with classified as SNXX?. e.g. Events classified as 'SNIa?' have TYPE=101.  
+
+PHASE ESTIMATION:
+ - In the rest-frame, determined from MJD_OBS combined with the measured redshift and an estimate of t_max/t_explosion based on the following prescription.
+	- DES-SN3YR_SNIa: Phases are given relative to t_max
+			  Derived from light-curve data using the SALT2_B14 template in the SNANA framework
+			  Where no estimate is available, but a peak can be inferred visually, t_max is estimated from the r-band light-curve
+			  For cases where t_max is not within the DES-SN3YR survey window, 'PRE-MAX' and 'POST-MAX' are used to indicate approximate phase information
+	- DES-SN3YR_SNCC: Phases are given relative to t_exp 
+			  Where available, values determined in De Jaeger et al (MNRAS, 495, 4860D, 2020) are given
+			  Elsewhere, t_exp is determined to be the mid-point between the last non-detection and the first detection in r-band
+                          For cases where t_exp is not within the DES-SN3YR survey window, 'PRE-MAX' and 'POST-MAX' are used to indicate approximate phase information
+	- DES-SN3YR_SLSN: Phases are given relative to t_max, as determined in Angus et al (MNRAS, 487, 2215A, 2019)
+	- DES-SN3YR_TDE:  Phases are given relative to t_exp
+			  t_exp is determined to be the mid-point between the last non-detection and the first detection in r-band
+
+REDSHIFT UNCERTAINTIES:
+ - For each spectrum, redshift are estimated from galaxy features (Z_GAL) if present or matches to literature SN templates if no galaxy lines are visible (Z_SN)
+	- "Z_GAL": redshift derived from galaxy features. These redshifts have a nominal uncertainty of 0.0005
+	- "Z_SN" : redshift derived from matched to SN templates. Nominal uncertainty is 0.005
+
+-----------------------------------

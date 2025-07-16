@@ -1,0 +1,12 @@
+These data files can also be found under
+  $SNDATA_ROOT/lcmerge/DES-SN3YR_DES
+  $SNDATA_ROOT/lcmerge/DES-SN3YR_LOWZ
+
+Photometry provided in
+   DES-SN3YR_DES/ 
+already has chromatic corrections
+and flux uncertainty corrections applied
+   DES_corrections/
+is included simply for reference.
+
+

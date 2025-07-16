@@ -1,0 +1,54 @@
+DES-SN3YR SPECTROSCOPY DATA RELEASE
+-----------------------------------
+
+Reference: D'Andrea, C, et. al., 2018 (arXiv:1811.09565) / Smith, M, et. al., 2020 (submitted)
+
+- Included are the reductions of 488 spectra of 307 unique sources. 
+- Reductions courtesy of individual observers. 
+- Details of instrumental choices, targeting strategies and the methodology used to classify individual spectra can be found in D'Andrea, C, et. al., 2018 (arXiv:1811.09565). 
+
+-----------------------------------
+
+FILE INFO:
+
+DES-SN3YR.LIST: 		List and classifications for 308 transients discovered and spectroscopically confirmed by DES-SN: the DES-SN3YR dataset.
+ - COLUMNS:
+ 	- TRANSIENT:           		internal string ID for each transient
+ 	- SNID:                		candidate ID for each transient. Matches the value used in the DES-SN3YR cosmology analysis (Abbott, et. al., ApJ, 872L, 30A, 2019) and photometric data release (Brout, et. al, ApJ, 874, 176B, 2019).
+	- RA/DEC:			on sky position information in the J2000 system
+	- SPEC_TYPE:			spectroscopic typing: see D'Andrea 2018 for details
+	- Z_SPEC:			best redshift (ZHEL), determined from either SN featues or HOST absorption/emission lines. Estimate is determined considering all spectra taken, including those of the host galaxy prior to explosion / after the transient has faded, with galaxy features prioritised. 
+
+DES-SN3YR_CLASSIFICATION.LIST: 	List of 489 spectroscopic observations leading to a classification. 
+				488 of 489 spectra are released here. 1 spectrum (DES14S1rwf) is proprietary. Information on which can be found in CBET4050. 
+ - COLUMNS:
+	- TRANSIENT/SNID:		as above
+	- RA/DEC			as above
+	- TELESCOPE/INSTRUMENT          facility and instrument used to obtain spectrum
+	- OBS_DATE/MJD                  date of observation in UTC/MJD to the nearest day
+	- SPEC_TYPE			spectroscopic typing: see D'Andrea 2018 for details
+	- Z_SPEC			best redshift (ZHEL), determined from either SN featues or HOST absorption/emission lines
+
+DES-SN3YR_OBSERVATIONS.LIST: 	List of 1385 spectroscopic observations of 707 transients taken by DES-SN in the first 3 years of survey operations 
+ - COLUMNS:
+	- TRANSIENT/SNID:		as above
+	- TELESCOPE/INSTRUMENT		as above
+	- OBS_DATE/MJD			as above
+	- MAG_I:			magnitude of transient in DES i-band at time of observation. Measurement taken from closest DES-SN data-point to spectroscopic observation
+					entry is blank if no valid entry is available within 21 days
+	- %_INCREASE:			percentage increase of transient relative to background flux. Background estimate is determined from template image
+
+-----------------
+
+DATA RELEASE STRUCTURE: 
+
+1D reduced spectra are provided using the following directory structure: 
+ - DES-SN3YR_SNIa: Events classified as "SNIa" or "SNIa?" (as given in "DES-SN3YR_CLASSIFICATION.LIST")
+ - DES-SN3YR_SNCC: Events classified as "SNIb", "SNIc", "SNII"
+ - DES-SN3YR_SLSN: Events classified as "SLSN-I" or "SLSN-II"
+ - DES-SN3YR_TDE:  Events classified as "TDE"
+
+Details on the file structure, header information and typing, redshift and phase determination for each observation can be found in DES-SN3YR_HEADER.INFO
+
+-----------------------------------
+
